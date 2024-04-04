@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+##Документация проекта "Оптимизированная галерея изображений на React"
+Описание проекта
+Проект "Оптимизированная галерея изображений на React" представляет собой веб-приложение, разработанное для отображения списка изображений, полученных с публичного API, с использованием библиотеки React. Основной целью проекта является практика в использовании React, а также применение методов оптимизации загрузки страницы и ресурсов.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Основные компоненты
+Проект включает следующие основные компоненты:
 
-## Available Scripts
+ImageGallery: Компонент для отображения списка изображений.
+LazyLoadImage: Компонент для ленивой загрузки изображений.
+PerformanceAnalysis: Компонент для анализа производительности приложения.
+Используемые библиотеки
+Для разработки проекта используются следующие библиотеки:
 
-In the project directory, you can run:
+React: Для построения интерфейса.
+react-lazy-load-image-component: Для реализации ленивой загрузки изображений.
+localforage: Для локального хранения данных.
+Оптимизации и функциональности
+Проект реализует следующие методы оптимизации и функциональности:
 
-### `npm start`
+Ленивая загрузка изображений (Lazy Loading): Изображения загружаются только тогда, когда они попадают в область видимости пользователя, что снижает начальную нагрузку приложения.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Предзагрузка критически важных изображений: Некоторые изображения предзагружаются с помощью <link rel="preload">, что улучшает пользовательский опыт.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Анализ производительности с помощью Performance Web APIs: Используются Navigation Timing и Resource Timing API для сбора данных о времени загрузки приложения и отдельных ресурсов.
 
-### `npm test`
+##3Публикация проекта
+Проект размещен на GitHub Pages и доступен для просмотра по следующей ссылке: Оптимизированная галерея изображений на React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###Выводы
+В ходе разработки проекта были успешно применены различные методы оптимизации, такие как ленивая загрузка изображений и предзагрузка критически важных ресурсов, что значительно улучшило производительность приложения и улучшило пользовательский опыт.
 
-### `npm run build`
+Данная документация предоставляет обзор проекта, описывая его основные компоненты, использованные библиотеки, примененные методы оптимизации и выводы из процесса разработки.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
